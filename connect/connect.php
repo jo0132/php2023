@@ -24,6 +24,6 @@
     if(mysqli_connect_errno()){
         echo "Database Connect false";
     } else {
-        // echo "Database Connect True";
+        echo "Database Connect True";
     }
 ?>
