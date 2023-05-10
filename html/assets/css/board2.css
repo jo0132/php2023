@@ -1,0 +1,117 @@
+/* board */
+.board__inner {
+    margin-top: 50px;
+}
+.board__header {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    
+}
+.board__left p {
+    margin: 10px;
+}
+.board__left p > em {
+    color: #ff0000;
+}
+
+.board__right input {
+    width: 300px;
+    height: 45px;
+    border-color: #000;
+    border: 1px solid #C4C4C4;
+    border-radius: 5px;
+    padding: 10px;
+}
+.board__right select {
+    display: inline-block;
+    width: 100px;
+    border: 1px solid var(--bg__gray);;
+    border-radius: 5px;
+    padding: 12px 14px;
+}
+.board__right .search__btn {
+    width: 100px;
+    display: inline-block;
+    background-color: #000;
+    padding: 14px 20px;
+    color: #fff;
+    cursor: pointer;
+    border-radius: 5px;
+    text-align: center;
+}
+.board__right .search__btn a {
+    color: #fff;
+}
+.board__right .editor__btn {
+    width: 100px;
+    display: inline-block;
+    border: 1px solid #fff;
+    background-color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+.board__main {
+
+}
+.board__main table {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    border-top: 3px solid #000;
+    border-bottom: 3px solid #000;
+    border-collapse: collapse;
+}
+.board__main table tr {
+    border-bottom: 1px solid #000;
+}
+.board__main table tr:first-child {
+    border-bottom: 1px solid #000;
+    background-color: #cccccc;
+}
+.board__main table tr:last-child {
+    border-bottom: none;
+}
+
+.board__main table tr td {
+    padding: 25px;
+    text-align: center;
+}
+.board__main tr > td:nth-child(2) {
+    width: 840px;
+}
+
+
+.board__inner .nav {
+    margin: 5vw;
+    text-align: center;
+}
+.board__inner .nav div {
+    display: inline-block;
+    margin-left: -5px;
+    border: 1px solid #e0e0e0;
+    padding: 10px 20px;
+    cursor: pointer;
+}
+.board__inner .nav button:nth-child(3){
+    background-color: #000;
+    color: #fff;
+}
+.board__footer {
+    width: 1260px;
+    margin: 0 auto;
+    height: 100px;
+}
+.footer__inner {
+    margin: 3vw 0;
+}
+.footer__inner p {
+    text-align: right;
+    margin: -2vw 0;
+}
+

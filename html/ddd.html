@@ -1,0 +1,129 @@
+
+<!--  -->
+
+<pre>array(3) {
+    ["memberID"]=>
+    string(1) "1"
+    ["youEmail"]=>
+    string(16) "jo0132@naver.com"
+    ["youName"]=>
+    string(9) "노지영"
+  }
+  </pre><!DOCTYPE html>
+  <html lang="ko">
+  <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>PHP블로그 만들기</title>
+  
+      <!-- CSS -->
+  <link rel="stylesheet" href="../html/assets/css/stylesheet.css">
+  
+  <!-- SCRIPT -->
+  <script defer src="../html/assets/js/common.js"></script> 
+  </head>
+  <body class="gray">
+      <div id="skip">
+      <a href="#header">헤더 영역 바로가기</a>
+      <a href="#main">메인 영역 바로가기</a>
+      <a href="#footer">푸터 영역 바로가기</a>
+  </div>
+  <!-- //skip -->    <!-- //skip -->
+  
+      <header id="header">
+      <div class="header__inner container">
+          <div class="left">
+              <a href="../index.html" class="star"><span class="blind">메인으로</span></a>
+          </div>
+          <h1 class="logo">
+              <a href="../main/main.php">Developer Blog</a>
+          </h1>
+  
+          <div class="right">
+                              <!-- 로그인 한 경우 -->
+                      <ul>
+                          <li><a href="../mypage/mypage.php">노지영님 환영합니다.🤩</a></li>
+                          <li><a href="../login/logout.php">로그아웃</a></li>
+                      </ul>
+                      </div>
+  
+  
+      </div>
+      <nav class="nav__inner">
+          <ul>
+              <li><a href="../join/join.php">회원가입</a></li>
+              <li><a href="../login/login.php">로그인</a></li>
+              <li><a href="../board/board.php">게시판</a></li>
+              <li><a href="">블로그</a></li>
+          </ul>
+      </nav>
+  </header>
+      <!-- //header -->    <!-- //header -->
+  
+      <main id="main" class="container">
+          <div class="intro__inner center">
+              <picture class="intro__images small">
+                  <img src="../assets/img/join01.png" alt="게시판 이미지">
+              </picture>
+              <h2>게시판 보기</h2>
+              <p class="intro__text">
+                  웹디자이너, 웹퍼블리셔, 프론트앤드 개발자를 위한 게시판입니다.<br>
+                  관련된 문의 사항을 여기서 확인하세요!
+              </p>
+          </div>
+          <!-- //intro__inner -->
+  
+          <div class="board__inner">
+              <div class="board__View">
+                  <table class="container">
+                      <colgroup>
+                          <col style="width: 20%;">
+                          <col style="width: 80%;">
+                      </colgroup>
+                      <tbody>
+                          <!-- <tr>
+                              <th>제목</th>
+                              <td>게시판 제목입니다.</td>
+                          </tr>
+                          <tr>
+                              <th>동록자</th>
+                              <td>노지영</td>
+                          </tr>
+                          <tr>
+                              <th>등록일</th>
+                              <td>2023-04-24</td>
+                          </tr>
+                          <tr>
+                              <th>조회수</th>
+                              <td>99</td>
+                          </tr>
+                          <tr>
+                              <th>내용</th>
+                              <td>
+                              </td>
+                          </tr> -->
+  
+  <tr><th>제목</th><td>dkssudgktpdy</td></tr><tr><th>등록자</th><td>노지영</td></tr><tr><th>등록일</th><td>2023-04-25</td></tr><tr><th>조회수</th><td>1</td></tr><tr><th>내용</th><td>dkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdydkssudgktpdy</td></tr>                    </tbody>
+                  </table>
+              </div>
+              <div class="board__btn mb70">
+                  <a href="boardModify.php?boardID=311" class="btnStyle3">수정하기</a>
+                  <a href="boardRemove.php?boardID=311" class="btnStyle3" onclick="confirm('정말삭제하시나요?','')">삭제하기</a>
+                  <a href="board.php" class="btnStyle3">목록보기</a>
+              </div>
+          </div>
+  
+      </main>
+      <!-- //main -->
+  
+  
+      <footer id="footer">
+      <div class="footer__inner mb100 btStyle container">
+          <div>jo0132@naver.com</div>
+          <div>blog by njy</div>
+      </div>
+  </footer>
+  <!-- footer -->    <!-- //footer -->
+  </body>
+  </html>
