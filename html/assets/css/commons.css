@@ -123,6 +123,17 @@ body.windows {
     font-size: 1rem;
     cursor: pointer;
 }
+.btnStyle4 {
+    display: inline-block;
+    padding: 1em 2em;
+    margin: 0 0.5em;
+    background-color: var(--bg__black);
+    color: var(--color__white);
+    border-radius: 100px;
+    text-align: center;
+    font-size: 1rem;
+    cursor: pointer;
+}
 
 
 
@@ -131,6 +142,14 @@ body.windows {
     background-color: #fff;
     width: 100%;
     border-radius: 5px;
+    padding: 1em 2em;
+    border: 0;
+    font-weight: 300;
+}
+.inputStyle2 {
+    width: 50%;
+    background-color: #fff;
+    border-radius: 100px;
     padding: 1em 2em;
     border: 0;
     font-weight: 300;

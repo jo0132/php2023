@@ -29,7 +29,7 @@
         <!-- //intro__inner  -->
 
         <div class="join__inner">
-            <h2>회원가입</h2>
+            <h2>회원가ddd입</h2>
             <div class="index">
                 <ul>
                     <li>1</li>
