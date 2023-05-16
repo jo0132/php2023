@@ -134,6 +134,16 @@ body.windows {
     font-size: 1rem;
     cursor: pointer;
 }
+.btnStyle5 {
+    border: 1px solid var(--color__black);
+    border-radius: 20px;
+    padding: 2px 10px;
+}
+.btnStyle5:hover {
+    background-color: var(--color__black);
+    color: var(--color__white);
+}
+
 
 
 

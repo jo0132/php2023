@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP 블로그 메인</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/stylesheet.css">
+    <!-- SCRIPT -->
+    <script defer src="assets/js/common.js"></script>
+</head>
+<body class="gray">
+    <div id="skip">
+        <a href="#header">헤더 영역 바로가기</a>
+        <a href="#main">컨텐츠 영역 바로가기</a>
+        <a href="#footer">푸터 영역 바로가기</a>
+    </div>
+    <!-- //skip -->
+    <header id="header" class="container">
+        <div class="header__inner">
+            <div class="left">
+                <a href="../index.html" class="star">
+                    <span class="blind">메인으로</span>
+                </a>
+            </div>
+            <h1 class="logo"> <a href="main.html">Developer Blog</a></h1>
+            <div class="right">
+                <ul>
+                    <li><a href="join.html">회원가입</a></li>
+                </ul>
+            </div>
+        </div>
+        <nav class="nav__inner">
+            <ul>
+                <li><a href="join.html">회원가입</a></li>
+                <li><a href="login.html">로그인</a></li>
+                <li><a href="board.html">게시판</a></li>
+                <li><a href="blog.html">블로그</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- //header -->
+    <main id="main" class="container">
+        <div class="blog__title">
+            <span class="cate">카테고리 제목</span>
+            <h2 class="title">블로그 게시글 타이틀</h2>
+            
+            <div class="info">
+                <span class="author">글쓴이</span>
+                <span class="date">2023-04-05</span>
+                <div class="modify">
+                    <span><a href="#">수정</a></span>
+                    <span><a href="#">삭제</a></span>
+                </div>
+            </div>
+        </div>
+        <div class="blog__inner">
+            <div class="left mt70">
+                <h3>블로그 제목이 들어가고</h3>
+                <p>블로그 내용들이 여기에 들어가겠지</p>
+                <p>블로그 내용들이 여기에 들어가겠지</p>
+                <p>블로그 내용들이 여기에 들어가겠지</p>
+                <p>블로그 내용들이 여기에 들어가겠지</p>
+                <p>블로그 내용들이 여기에 들어가겠지</p>
+            </div>
+            <div class="right">
+                <div class="blog__aside">
+                    <div class="intro">
+                        <picture class="img">
+                            <source srcset="assets/img/intro01.png, assets/img/intro01@2x.png 2x, assets/img/intro01@3x.png 3x" />
+                            <img src="assets/img/intro01.png" alt="소개이미지">
+                        </picture>
+                        <p class="text">
+                            어떤 일이라도 노력하고 즐기면 그 결과는 빛을 바란다고 생각합니다.
+                        </p>
+                    </div>
+                    <div class="cate">
+                        <h4>카테고리</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>최신 글</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>인기 글</h4>
+                    </div>
+                    <div class="cate">
+                        <h4>최신 댓글</h4>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //blog__inner -->
+        <div class="blog__article">
+            <h3>관련글</h3>
+            <div class="cards__inner col4">
+                <div class="card">
+                    <figure class="card__img">
+                        <a href="#" class="more"><img src="./assets/img/blog 725-min.jpg" alt="소개 이미지"></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>php파일은 json으로 못받는 이유</h3>
+                    </div>
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <a href="#" class="more"><img src="./assets/img/blog 726-1-min.jpg" alt="소개 이미지"></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>php파일은 json으로 못받는 이유</h3>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <a href="#" class="more"><img src="./assets/img/blog 727-1-min.jpg" alt="소개 이미지"></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>php파일은 json으로 못받는 이유</h3>
+                    </div>
+                    
+                </div>
+                <div class="card">
+                    <figure class="card__img">
+                        <a href="#" class="more"><img src="./assets/img/blog 728-min.jpg" alt="소개 이미지"></a>
+                    </figure>
+                    <div class="card__title">
+                        <h3>php파일은 json으로 못받는 이유</h3>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+        <!-- //blog__article -->
+        <div class="blog__commant">
+            <h3>댓글쓰기</h3>
+            <div></div>
+        </div>
+        <!-- //blog__commant -->
+        <!-- <div class="sliders__inner"></div> - 각 페이지 소개 배너
+                <div class="join__inner"></div> - 회원가입 페이지
+                <div class="board__inner"></div> - 게시판 페이지
+        <div class="banners__inner"></div> -
+        <div class="cards__inner"></div>
+        <div class="images__inner"></div>
+        <div class="ads__inner"></div>
+        <div class="texts__inner"></div>
+        <div class="login__inner"></div>
+        <div class="bolg__inner"></div> -->
+    </main>
+    <!-- //main -->
+    <footer id="footer">
+        <div class="footer__inner mb100 btStyle container">
+            <div>jo0132@naver.com</div>
+            <div><a href="adminAgree.html" class="btnStyle5">관리자 로그인</a><a href="mailto:jo0132@naver.com">blog by njy</a></div>
+        </div>
+    </footer>
+    <!-- //footer -->
+</body>
+</html>
