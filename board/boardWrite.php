@@ -1,52 +1,62 @@
 <?php
     include "../connect/connect.php";
     include "../connect/session.php";
-
-    echo "<pre>";
-    var_dump($_SESSION);
-    echo "</pre>";
+    $sql = "SELECT count(boardID) FROM board";
+    $result = $connect -> query($sql);
+    $boardTotalCount = $result -> fetch_array(MYSQLI_ASSOC);
+    $boardTotalCount = $boardTotalCount['count(boardID)'];
 ?>
 <!DOCTYPE html>
-<html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PHP블로그 만들기</title>
-
-    <?php include "../include/head.php" ?> 
-</head>
-<body class="gray">
-    <?php include "../include/skip.php" ?>
-    <!-- //skip -->
-
-    <?php include "../include/header.php" ?>
-    <!-- //header -->
-
-    <main id="main" class="container">
-        <div class="intro__inner bmStyle center">
-            <picture class="intro__images small">
-                <source srcset="../assets/img/intro01.png, ../assets/img/intro01@2x.png 2x, ../assets/img/intro01@3x.png 3x" />
-                <img src="../assets/img/intro01.png" alt="소개이미지">
-            </picture>
-            <h2>게시글 작성하기</h2>
-            <p class="intro__text">
-                웹디자이너, 웹퍼블리셔, 프론트앤드 개발자를 위한 게시판입니다.<br>
-                관련된 문의 사항을 여기서 확인하세요!
-            </p>
+    <html lang="ko">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://uicdn.toast.com/editor/latest/toastui-editor.min.css" />
+        <title>블로그 작성</title>
+        <?php include "../include/head.php" ?>
+        <style>
+        :not(.auto-height)>.toastui-editor-defaultUI>.toastui-editor-main {
+            background-color: #fff;
+        }
+    </style>
+    </head>
+    <body class="gray">
+        <?php include "../include/skip.php" ?>
+        <!-- //skip -->
+        <?php include "../include/header.php" ?>
+        <!-- //header -->
+        <main id="main" class="container">
+        <div class="blog__search bmStyle">
+            <h2>개발자 블로그 입니다.</h2>
+            <p>개발과 관련된 글을 작성해 보세요</p>
         </div>
-        <div class="board__inner">
-            <div class="board__write">
-                <form action="boardWriteSave.php"name="boardWriteSave" method="post">
+        <div class="blog__inner">
+            <div class="blog__write">
+                <form action="blogWriteSave.php" name="blogWrite" method="post" enctype="multipart/form-data">
                     <fieldset>
                         <legend class="blind">게시글 작성하기</legend>
                         <div>
-                            <label for="boardTitle">제목</label>
-                            <input type="text" id="boardTitle" name="boardTitle" class="inputStyle" required>
+                            <label for="blogCategory">카테고리</label>
+                            <select name="blogCategory" id="blogCategory">
+                                <option value="javascript">Javascript</option>
+                                <option value="jquery">Jquery</option>
+                                <option value="react">React</option>
+                                <option value="javascript">잡담</option>
+                            </select>
                         </div>
                         <div>
-                            <label for="boardContents">내용</label>
-                            <textarea name="boardContents" id="boardContents" rows="20" class="inputStyle" required></textarea>
+                            <label for="blogTitle" class="blog_title">제목</label>
+                            <input type="text" name="blogTitle" id="blogTitle" class="inputStyle" blogFile>
+                        </div>
+                        <div>
+                            <label for="blogContents" class="blog_tible">내용</label>
+                            <textarea name="blogContents" id="blogContents" rows="20" class="inputStyle"></textarea>
+                            <!-- <div id="editor"></div> -->
+                        </div>
+                        <div class="mt30">
+                            <label for="blogFile">파일</label>
+                            <input type="file" name="blogFile" id="blogFile" accept=".jpg,.jpeg,.png,.gif" placeholder="jpg, gif, png 파일만 넣을 수 있습니다. 용량은 1mb를 넘길 수 없습니다">
                         </div>
                         <button type="submit" class="btnStyle3">저장하기</button>
                     </fieldset>
@@ -55,7 +65,17 @@
         </div>
     </main>
     <!-- //main -->
-    <?php include"../include/footer.php"?>
-
-</body>
+    <?php include "../include/footer.php" ?>
+    <!-- //footer -->
+    <script src="https://uicdn.toast.com/editor/latest/toastui-editor-all.min.js"></script>
+    <script>
+        const Editor = toastui.Editor;
+        const editor = new Editor({
+            el: document.querySelector('#editor'),
+            height: '600px',
+            initialEditType: 'markdown',
+            previewStyle: 'vertical'
+            });
+    </script>
+    </body>
 </html>
