@@ -75,28 +75,12 @@
                 </div>
             </div>
             <div class="right mt100">
-                <div class="blog__aside">
-                    <div class="intro">
-                        <picture class="img">
-                    <source srcset="../assets/img/intro01.png, ../assets/img/intro01@2x.png 2x, ../assets/img/intro01@3x.png 3x" />
-                        <img src="../assets/img/intro01.png" alt="소개이미지">
-                        </picture>
-                        <p class="text">
-                            어떤 일이라도 노력하고 즐기면 그 결과는 빛을 바란다고 생각합니다.
-                        </p>
-                    </div>
-                    <div class="cate">
-                        <h4>카테고리</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>최신 글</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>인기 글</h4>
-                    </div>
-                    <div class="cate">
-                        <h4>최신 댓글</h4>
-                    </div>
+            <div class="blog__aside">
+<?php include "../include/blogTitle.php" ?>
+<?php include "../include/blogCate.php" ?>
+<?php include "../include/blogLatest.php" ?>
+<?php include "../include/blogPopular.php" ?>
+<?php include "../include/blogComment.php" ?>
                 </div>
             </div>
         </div>

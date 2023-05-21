@@ -8,6 +8,10 @@ if(isset($_GET['blogID'])){
         Header("Location: blog.php");
     }
     
+    // 보드뷰 + 1
+    $sql = "UPDATE blog SET blogView = blogView +1 WHERE blogID = {$blogID}";
+    $connect -> query($sql); 
+
     // echo "<pre>";
     // var_dump($_SESSION);
     // echo "</pre>";
