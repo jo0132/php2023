@@ -13,11 +13,11 @@
 
     $result = $connect -> query($sql);
 
-    if($result){
-        echo "create tables complete";
-    } else {
-        echo "create tables false";
-    }
+    // if($result){
+    //     echo "create tables complete";
+    // } else {
+    //     echo "create tables false";
+    // }
 
 
     // create table members(

@@ -67,7 +67,7 @@ if($categoryCount==0){
                 <div class="blog__aside">
 <?php include "../include/blogTitle.php" ?>
 <?php include "../include/blogCate.php" ?>
-<?php include "../include/blogLatest.php" ?>
+<?php include "../include/blogNew.php" ?>
 <?php include "../include/blogPopular.php" ?>
 <?php include "../include/blogComment.php" ?>
                 </div>
