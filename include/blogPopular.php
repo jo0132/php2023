@@ -8,7 +8,7 @@
 <?php foreach($result as $blog){ ?>
     <li>
     <a href="blogview.php?blogID=<?=$blog['blogID']?>">
-    <img src="../assets/blog/<?=$blog['blogImgFile']?>" alt="<?=$blog['blogTitle']?>">
+        <img src="../assets/blog/<?=$blog['blogImgFile']?>" alt="<?=$blog['blogTitle']?>">
         <span><?=$blog['blogTitle']?></span>
     </a>
     </li>
